@@ -47,12 +47,12 @@ function App() {
     <Alert alert={alert} ></Alert>
     <div className="container">
       <Routes>
-    <Route path="/" element={<Textform placeholder = "Enter your text" mode={mode} showAlert={showAlert}></Textform>} /> 
+    <Route exact path="/" element={<Textform placeholder = "Enter your text" mode={mode} showAlert={showAlert}></Textform>} /> 
     </Routes>
     </div>
     {/* <Dark_mode></Dark_mode> */}
     <Routes>
-          <Route path="/about" element={<About mode={mode}/>} />
+          <Route exact path="/about" element={<About mode={mode}/>} />
     </Routes>
 
      </BrowserRouter>
